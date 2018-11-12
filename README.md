@@ -146,8 +146,8 @@
 	itf=juliam(0,5,12,14,26)
 	print *,itf
 	输出：190946
-------
 
+------
 ### IsfitH_tomoDD_Isqr.f
 
 ### IsfitHV_tomoDD_Isqr.f
@@ -187,8 +187,8 @@
 	real j
 	call ran(100,200,j)
 	输出：121.132172
-------
 
+------
 ### ray_common.inc
 
 ### Ray3VD.f
@@ -242,10 +242,36 @@
 
 ### snrm2.f
 
-### sort.f
+### sort.f(已更新为F90)
+#### 版本 Zhang版本
+#### 类型 subroutine sort(n, ra)
+#### 文件说明
+本子程序用于将输入浮点数组升序排列。
+#### 变量说明
+	变量名      变量类型                         变量说明
+	1.n         INTEGER                          数组长度
+	2.ra        REAL(n)                          浮点数组
+#### 算例
+	ra=(/3,4,1,2/)
+	n=4
+	输出：1 2 3 4
 
-### sorti.f
+------
+### sorti.f(已更新为F90)
+#### 版本 Zhang版本
+#### 类型 subroutine sorti(n, ra)
+#### 文件说明
+本子程序用于将输入整数数组升序排列。
+#### 变量说明
+	变量名      变量类型                         变量说明
+	1.n         INTEGER                          数组长度
+	2.ia        INTEGER(n)                       整数数组
+#### 算例
+	ia=(/2,21,1,4/)
+	n=4
+	输出：1 2 4 21
 
+------
 ### sscal.f
 
 ### sscanf3_.c
@@ -281,8 +307,8 @@
 	length=juliam(t)
 	print *,length
 	输出：7
-------
 
+------
 ### ttime.f
 
 ### vmodel.f
