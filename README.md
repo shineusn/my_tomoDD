@@ -124,8 +124,25 @@
 
 ### hypot_.c
 
-### ifindi.f
+### ifindi.f(已更新为F90)
+#### 版本 Zhang版本
+#### 类型 integer function ifindi(n, ia, iv)
+#### 文件说明
+本子函数用于在输入(已升序排列的)整数数组中寻找输入的整数的位置。
+#### 变量说明
+	变量名  变量类型                         变量说明
+	1.n       INTEGER                        数组长度  
+	2.ia      INTEGER(n)                 输入参量，整数数组
+	3.iv      INTEGER                   输入参量，需要寻找的整数
 
+	6.ifindi  INTEGER                   返回值，整数在数组中的位置
+#### 算例
+	iv=8
+        ia=(/1,2,3,5,6,8,10/)
+        m=ifindi(7,ia,iv)
+	输出:6
+
+------
 ### indexxi.f
 
 ### juliam.f(已更新为F90)
@@ -166,8 +183,21 @@
 
 ### matmult3.f
 
-### mdian1.f
+### mdian1.f(已更新为F90,未测试) 
+#### 版本 Zhang版本
+#### 类型 subroutine mdian1(x, n, xmed)
+#### 文件说明
+本子程序用计算浮点数组中位数。
+#### 变量说明
+	变量名      变量类型                         变量说明
+	1.x          REAL(n)                         输入数组
+	2.n          INTEGER                         数组长度
 
+	3.xmed        REAL                       输出参量，伪随机数
+#### 算例
+	缺失
+
+------
 ### normlz.f
 
 ### partials_tomoDD.f
@@ -281,8 +311,8 @@
 	变量名      变量类型                         变量说明
 	1.n         INTEGER                          数组长度
 	2.sa        REAL                             实数
-        3.sx        REAL(n)                          实数数组
-        4.incx      INTEGER                          步长,程序删改后为无关变量
+	3.sx        REAL(n)                          实数数组
+	4.incx      INTEGER                          步长,程序删改后为无关变量
 #### 算例
 	sx=(/2.2,1.2,2.0,1.0,1.1,3.0,4.0,6.0/)
         sa=2.0
@@ -291,7 +321,6 @@
   		6.000000       8.000000       12.00000
 
 ------
-
 ### sscanf3_.c
 
 ### sscanf4_.c
